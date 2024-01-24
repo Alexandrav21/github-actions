@@ -1,22 +1,19 @@
 name: Build
-
-on:
+'on':
   push:
     branches:
-      - test-branch  
-
+      - test-branch
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20' 
-
+          node-version: '20'
+      - name: Make build script executable
+        run: chmod +x ./build-script.sh
       - name: Run build script
         run: ./build-script.sh
