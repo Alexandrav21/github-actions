@@ -2,7 +2,7 @@ name: typescript-action
 description: Template of TypeScript Action
 
 inputs:
-  name:
+  github_token:
     description: example input
     required: true
 
