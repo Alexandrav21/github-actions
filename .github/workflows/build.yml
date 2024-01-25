@@ -17,3 +17,8 @@ jobs:
         run: chmod +x ./build-script.sh
       - name: Run build script
         run: ./build-script.sh
+      - name: Publish
+        uses: dylanvann/publish-github-action@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+#npm run should generate the dist folder etc, look into this after
