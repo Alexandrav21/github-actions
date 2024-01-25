@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"Error: no test specified\""
+    "build": "esbuild src/index.ts --bundle --outdir=dist --platform=node --target=node20"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Alexandrav21/github-actions/issues"
   },
-  "homepage": "https://github.com/Alexandrav21/github-actions#readme"
+  "homepage": "https://github.com/Alexandrav21/github-actions#readme",
+  "dependencies": {
+    "esbuild": "^0.19.12",
+    "typescript": "^5.3.3"
+  }
 }

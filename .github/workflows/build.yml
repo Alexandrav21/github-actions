@@ -13,10 +13,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-      - name: Make build script executable
-        run: chmod +x ./build-script.sh
-      - name: Run build script
-        run: ./build-script.sh
       - name: Publish
         uses: dylanvann/publish-github-action@v1
         with:
