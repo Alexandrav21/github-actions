@@ -1,6 +1,6 @@
 {
   "name": "github-actions",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "main": "index.js",
   "files": [
@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/Alexandrav21/github-actions#readme",
   "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
     "esbuild": "^0.19.12",
     "typescript": "^5.3.3"
   }
