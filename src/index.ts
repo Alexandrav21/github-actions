@@ -1,7 +1,7 @@
 import * as core from '@actions/core';
 import * as github from '@actions/github';
 
-async function runPullRequest(): Promise<void> {
+export async function runPullRequest(): Promise<void> {
     try {
         // I need to desctructure the title and description from the PR payload
         const { title, body: description } = github.context.payload.pull_request;
@@ -26,3 +26,4 @@ async function runPullRequest(): Promise<void> {
 }
 
 runPullRequest();
+
