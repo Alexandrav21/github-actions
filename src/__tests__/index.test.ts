@@ -1,4 +1,4 @@
-import {runPullRequest} from '../src/index';
+import {runPullRequest} from '../index';
 import * as core from '@actions/core';
 import * as github from '@actions/github';
 
