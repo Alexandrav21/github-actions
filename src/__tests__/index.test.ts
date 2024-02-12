@@ -25,3 +25,10 @@ jest.mock('@actions/github', () => ({
   },
   getOctokit: jest.fn(),
 }));
+
+describe( 'check index.ts', () => {
+it('should call setFailed with erorrs', async() => {
+  await runPullRequest() 
+  expect(core.setFailed).toHaveBeenCalledWith("The PR must have a title!\nThe PR must have a description!\nThe PR description must include a Jira link!")
+})
+})
