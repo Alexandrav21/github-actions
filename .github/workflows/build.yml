@@ -19,4 +19,3 @@ jobs:
         uses: dylanvann/publish-github-action@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-#npm run should generate the dist folder etc, look into this after
